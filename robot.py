@@ -25,7 +25,7 @@ def generate_response(input_text, open_ai_key, openai_base_url):
         spark_app_id=app_id, spark_api_key=api_key, spark_api_secret=api_secret
     )
 
-    llm = ChatOpenAI(
+    llm = ChatSparkLLM(
         temperature=0,
         openai_api_key=open_ai_key,
         base_url=openai_base_url
